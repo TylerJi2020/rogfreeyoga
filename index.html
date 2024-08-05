@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script
+      src="https://kit.fontawesome.com/9aa6408b7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/self_improvement.png" type="image/x-icon" />
+    <title>ホームページ</title>
+    <style>
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .modal-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        text-align: center;
+        width: 90%;
+        max-width: 500px;
+        z-index: 1001;
+      }
+
+      .modal-content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+
+      .modal-content .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #aaa;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .modal-content .close:hover,
+      .modal-content .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      body.modal-open {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="images/bg.jpg" alt="Yoga and Digestion" />
+        <h2>ようこそ！</h2>
+        <p>
+          このウェブサイトでは、さまざまなヨガのポーズとそれらが健康に与える効果について学ぶことができます。ヨガは心身の調和を促進し、健康を向上させる素晴らしい方法です。ぜひお試しください。
+        </p>
+      </div>
+    </div>
+    <nav>
+      <!-- ナビゲーションバーのロゴ -->
+      <div class="logo">
+        <span class="material-symbols-outlined"> self_improvement </span>
+      </div>
+
+      <!-- ナビゲーションバーのリンク -->
+      <ul class="navlinks">
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#ailment">病気</a></li>
+        <li class="dropdown">
+          アーサナ
+          <div class="dropdown-content">
+            <a href="html/balasana.html">バラーサナ</a>
+            <a href="html/pranayam.html">プラーナーヤーマ</a>
+            <a href="html/paripurnanavasana.html">ボートポーズ</a>
+            <a href="html/suryanamaskar.html">スーリヤ・ナマスカーラ</a>
+            <a href="html/cobra.html">コブラポーズ</a>
+            <a href="html/varkasana.html">ツリーポーズ</a>
+            <a href="html/tadasana.html">ターダーサナ</a>
+          </div>
+        </li>
+        <li><a href="#contactus">お問い合わせ</a></li>
+      </ul>
+
+      <!-- ハンバーガーアイコン -->
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <script src="javascript/nav.js"></script>
+
+    <!-- ホームページのテキスト -->
+    <header id="showcase">
+      <h1>Rog-Free</h1>
+      <p>ヨガは身体と心の完璧な調和を形成するのに役立ちます。</p>
+      <a href="#ailment" class="button">もっと読む</a>
+    </header>
+
+    <!-- 病気のページ -->
+    <div id="ailment">
+      <section class="cards">
+        <h1>あなたの病気を選んでください！</h1>
+        <div class="search-box">
+          <div class="search-input">
+            <input type="text" placeholder="検索する..." />
+            <div class="autocom-box"></div>
+            <span class="material-symbols-outlined">search</span>
+          </div>
+        </div>
+        <div class="cue">
+          <!-- 6つの異なる病気のための6つのボックス -->
+          <div class="box">
+            <a href="html/digestive.html">
+              <img src="images/digestive.jpg" alt="消化器系の障害" />
+              <div class="dis">消化器系の障害</div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="html/heartdisease.html">
+              <img src="images/heart.jpg" alt="心臓病" />
+              <div class="dis">心臓の問題</div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="html/depression.html">
+              <img src="images/anxiety.jpg" alt="不安" />
+              <div class="dis">不安/パニック</div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="html/asthama.html">
+              <img src="images/asthma.jpg" alt="喘息" />
+              <div class="dis">喘息</div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="html/bodypain.html">
+              <img src="images/pain.jpg" alt="関節痛" />
+              <div class="dis">関節痛</div>
+            </a>
+          </div>
+
+          <div class="box">
+            <a href="html/diabetes.html">
+              <img src="images/diabetes.jpg" alt="糖尿病" />
+              <div class="dis">糖尿病</div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- お問い合わせページ -->
+    <div id="contactus">
+      <form
+        action="https://formsubmit.co/devanshsahni123@gmail.com"
+        method="POST"
+      >
+        <section class="contact">
+          <h1>お問い合わせ</h1>
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" placeholder="名前" name="name" required />
+          <input type="email" placeholder="メール" name="email" required />
+          <textarea
+            type="text"
+            class="message"
+            name="Message"
+            placeholder="メッセージを入力してください"
+          ></textarea>
+          <button type="submit">送信</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://devanshsahni.github.io/Rog-Free/"
+          />
+        </section>
+      </form>
+    </div>
+
+    <!-- フッター -->
+    <footer class="footer">
+      <p>今日、私たちのコミュニティの一員になりましょう。</p>
+      <br />
+      <!-- InstagramとFacebookのリンク -->
+      <div class="foot">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </footer>
+
+    <script src="javascript/searchbox.js"></script>
+    <script>
+      window.onload = function () {
+        var modal = document.getElementById("myModal");
+        var span = document.getElementsByClassName("close")[0];
+
+        // Show the modal on page load
+        modal.style.display = "block";
+        document.body.classList.add("modal-open");
+
+        // Close the modal when the user clicks on <span> (x)
+        span.onclick = function () {
+          modal.style.display = "none";
+          document.body.classList.remove("modal-open");
+        };
+
+        // Close the modal when the user clicks anywhere outside of the modal
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            document.body.classList.remove("modal-open");
+          }
+        };
+      };
+    </script>
+  </body>
+</html>
